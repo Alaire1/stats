@@ -6,7 +6,7 @@ SVG_FILE = "coding_stats.svg"
 
 token = os.getenv("GH_STATS_TOKEN")
 if not token:
-    raise Exception("GH_STATS_TOKEN not found. Set the token Developer Settings")
+    raise Exception("GH_STATS_TOKEN not found. Set the token in Developer Settings")
 
 github_var= Github(token)
 user = github_var.get_user(USERNAME)
