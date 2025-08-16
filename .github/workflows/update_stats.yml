@@ -1,0 +1,34 @@
+name: Update Coding Stats
+
+on:
+  schedule:
+  - cron: '0 0 * * *'
+  workflow_dispach:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Pythin
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+        
+      - name: Install Dependencies
+        run: pthon3 -m pip install PyGithub
+
+      - name: Generate SVG
+        run: python generate_stats_svg.py
+        env:
+          GH_STATS_TOKEN: ${{secrets.GH_STATS_TOKEN}}
+
+      - name: Commit and Push SVG
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@guthub.com"
+          git add coding_stats.svg
+          git commit -m "Update coding stats" || echo "No chnages to commit"
+          git push
