@@ -1,0 +1,20 @@
+
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font: bold 18px sans-serif; fill: #ff79c6; }
+        .label { font: 14px sans-serif; fill: #f8f8f2; }
+        .value { font: bold 16px sans-serif; fill: #50fa7b; }
+        rect { fill: #282a36; rx: 10; ry: 10; }
+    </style>
+    <rect x="0" y="0" width="400" height="150"/>
+    <text x="20" y="30" class="title">My Coding Stats</text>
+    <text x="20" y="70" class="label">Lines of Code:</text>
+    <text x="200" y="70" class="value">1474832</text>
+
+
+  <text x="20" y="100" class="label">Projects Completed:</text>
+  <text x="200" y="100" class="value">24</text>
+  
+  <text x="20" y="130" class="label">Commits:</text>
+  <text x="200" y="130" class="value">432</text>
+</svg>
