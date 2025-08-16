@@ -3,7 +3,7 @@ name: Update Coding Stats
 on:
   schedule:
   - cron: '0 0 * * *'
-  workflow_dispach:
+  workflow_dispatch:
 
 jobs:
   update-stats:
