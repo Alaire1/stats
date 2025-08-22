@@ -9,12 +9,12 @@
     <rect x="0" y="0" width="400" height="150"/>
     <text x="20" y="30" class="title">My Coding Stats</text>
     <text x="20" y="70" class="label">Lines of Code:</text>
-    <text x="200" y="70" class="value">1329995</text>
+    <text x="200" y="70" class="value">1743092</text>
 
 
   <text x="20" y="100" class="label">Projects Completed:</text>
-  <text x="200" y="100" class="value">22</text>
+  <text x="200" y="100" class="value">24</text>
   
   <text x="20" y="130" class="label">Commits:</text>
-  <text x="200" y="130" class="value">436</text>
+  <text x="200" y="130" class="value">448</text>
 </svg>
